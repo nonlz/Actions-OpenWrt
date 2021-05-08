@@ -22,8 +22,11 @@ git clone https://github.com/BoringCat/luci-app-mentohust.git package/luci-app-m
 
 # Add vssr
 git clone https://github.com/jerrykuku/luci-app-vssr.git package/luci-app-vssr
-# Add small
-git clone https://github.com/kenzok8/small.git package/small
+git clone https://github.com/jerrykuku/lua-maxminddb.git  # git lua-maxminddb vssr依赖
+
+
+# Add small passwall依赖
+git clone https://github.com/kenzok8/small.git 
 
 # Add openwrt-packages
-# git clone https://github.com/kenzok8/openwrt-packages.git package/openwrt-packages
+git clone https://github.com/kenzok8/openwrt-packages.git 
