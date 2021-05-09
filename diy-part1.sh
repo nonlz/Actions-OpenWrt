@@ -22,23 +22,24 @@
 # Add feed sources
 sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 sed -i '$a src-git diy https://github.com/CCnut/feed-netkeeper.git;LUCI-LUA-UCITRACK' feeds.conf.default
-
+sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
+sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
 # Add mentohust
 git clone https://github.com/KyleRicardo/MentoHUST-OpenWrt-ipk.git package/MentoHUST-OpenWrt-ipk
 git clone https://github.com/BoringCat/luci-app-mentohust.git package/luci-app-mentohust
 
 # Add luci-app-ssr-plus
-git clone https://github.com/fw876/helloworld
+#git clone https://github.com/fw876/helloworld
 
 
 # Add luci-app-vssr <M>
-git clone https://github.com/jerrykuku/lua-maxminddb.git
-git clone https://github.com/jerrykuku/luci-app-vss
+# git clone https://github.com/jerrykuku/lua-maxminddb.git
+# git clone https://github.com/jerrykuku/luci-app-vss
 
 # Add small passwall依赖
-git clone https://github.com/kenzok8/small.git 
+#git clone https://github.com/kenzok8/small.git 
 # Add passwall
-git clone https://github.com/xiaorouji/openwrt-passwall.git
+#git clone https://github.com/xiaorouji/openwrt-passwall.git
 
 # Add openwrt-packages
-git clone https://github.com/kenzok8/openwrt-packages.git 
+#git clone https://github.com/kenzok8/openwrt-packages.git 
