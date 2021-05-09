@@ -20,10 +20,13 @@ sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.
 git clone https://github.com/KyleRicardo/MentoHUST-OpenWrt-ipk.git package/MentoHUST-OpenWrt-ipk
 git clone https://github.com/BoringCat/luci-app-mentohust.git package/luci-app-mentohust
 
-# Add vssr
-# git clone https://github.com/jerrykuku/luci-app-vssr.git package/luci-app-vssr
-# git clone https://github.com/jerrykuku/lua-maxminddb.git  # git lua-maxminddb vssr依赖
+# Add luci-app-ssr-plus
+git clone https://github.com/fw876/helloworld
 
+
+# Add luci-app-vssr <M>
+git clone https://github.com/jerrykuku/lua-maxminddb.git
+git clone https://github.com/jerrykuku/luci-app-vss
 
 # Add small passwall依赖
 git clone https://github.com/kenzok8/small.git 
