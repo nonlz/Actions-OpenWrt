@@ -21,9 +21,13 @@
 
 # Add feed sources
 sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
-sed -i '$a src-git diy https://github.com/CCnut/feed-netkeeper.git;LUCI-LUA-UCITRACK' feeds.conf.default
-sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
-sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
+# sed -i '$a src-git diy https://github.com/CCnut/feed-netkeeper.git;LUCI-LUA-UCITRACK' feeds.conf.default
+# sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
+# sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
+
+# add feed
+git clone https://github.com/liuran001/openwrt-packages  package/openwrt-packages
+
 # Add mentohust
 git clone https://github.com/KyleRicardo/MentoHUST-OpenWrt-ipk.git package/MentoHUST-OpenWrt-ipk
 git clone https://github.com/BoringCat/luci-app-mentohust.git package/luci-app-mentohust
